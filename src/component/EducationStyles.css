@@ -1,0 +1,78 @@
+.education{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height:auto;
+    padding-bottom:2rem;
+}
+.education h2{
+    font-size: 2.6rem;
+    color:var(--text-color);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0rem;
+}
+.education h2 span{
+    color:var(--main-color);
+}
+.education .education-row{
+    display: flex;
+    flex-wrap:wrap;
+    gap:3rem;
+    margin-top:1.5rem;
+}
+.education-column .education-box{
+    border-left: .2rem solid var(--main-color);
+}
+.education-box .education-content{
+    position: relative;
+    padding-left: 2rem;
+} 
+.education-box .education-content::before{
+    content:'';
+    position: absolute;
+    top:0;
+    left:-1.1rem;
+    width: 2rem;
+    height:2rem;
+    background: var(--main-color);
+    border-radius: 50%;
+}
+.education-content .content{
+    position: relative;
+    padding: 1rem;
+    border: .2rem solid var(--main-color);
+    border-radius: .6rem;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+.education-content .content::before{
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    width:0;
+    height:100%;
+    background: var(--second-bg-color);
+    z-index:-1;
+    transition: .5s;
+}
+.education-content .content:hover::before{
+    width:100%;
+}
+.education-content .content .year{
+    font-size: 0.9rem;
+    color:var(--main-color);
+    padding-bottom:.4rem;
+}
+.education-content .content .year i{
+    padding-right: .4rem;
+}
+.education-content .content h3{
+    font-size:1.5rem;
+}
+.education-content .content p{
+    font-size: 1rem;
+}

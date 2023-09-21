@@ -1,0 +1,90 @@
+.skills{
+    min-height: auto;
+    padding-bottom:3rem;
+    background: var(bg-color);
+    width:90%;
+    margin: auto;
+}
+.skills h2{
+    font-size: 2.6rem;
+    color:var(--text-color);
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5rem;
+}
+.skills h2 span{
+    color:var(--main-color);
+}
+.skills .skills-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:5rem;
+    margin-top: 3rem;
+}
+.skills-row .skills-column{
+    flex:1 1 10rem;
+}
+.skills-box .skills-content{
+    position: relative;
+    border: .2rem solid var(--main-color);
+    border-radius: .6rem;
+    padding: 0rem 1.5rem;
+    z-index: 1;
+    overflow: hidden;
+}
+.skills-box .skills-content::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 0;
+    height:100%;
+    background: var(--second-bg-color);
+    z-index: -1;
+    transition: .5s;
+}
+.skills-box .skills-content:hover::before{
+    width:100%;
+}
+.skills-content .progress{
+    padding:1rem 0;
+}
+.skills-content .progress h3{
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.skills-content .progress h3{
+    color: var(--text-color);
+}
+.skills-content .progress .bar{
+    height:1.8rem;
+    border-radius: .6rem;
+    border: .2rem solid var(--main-color);
+    padding: .5rem;
+    margin: 0.5rem 0;
+}
+.skills-content .progress .bar span{
+    display: block;
+    height:100%;
+    border-radius: .3rem;
+    background: var(--main-color);
+}
+.skills-column:nth-child(1) .skills-content .progress:nth-child(1) .bar span{
+    width:90%;
+}
+.skills-column:nth-child(1) .skills-content .progress:nth-child(2) .bar span{
+    width:85%;
+}
+.skills-column:nth-child(1) .skills-content .progress:nth-child(3) .bar span{
+    width:65%;
+}
+.skills-column:nth-child(2) .skills-content .progress:nth-child(1) .bar span{
+    width:55%;
+}
+.skills-column:nth-child(2) .skills-content .progress:nth-child(2) .bar span{
+    width:60%;
+}
+.skills-column:nth-child(2) .skills-content .progress:nth-child(3) .bar span{
+    width:80%;
+}

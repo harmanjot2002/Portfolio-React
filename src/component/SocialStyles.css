@@ -1,0 +1,99 @@
+.Instalogo{
+    cursor: pointer;
+    animation-name: instaMove;
+    animation-duration: 2s;
+    animation-direction:normal ;
+    animation-fill-mode:forwards;
+    animation-timing-function: ease-in-out;
+    /* animation-timing-function: ease-out; */
+}
+@keyframes instaMove {
+    from{
+        height: 0%;
+        width: 0%;
+        
+        margin:-4rem;
+        /* margin-top: 8rem; */
+        padding: 0;
+
+    }
+    to{
+        margin-top: 8rem;
+        margin-left: 30rem;
+        width: 10%;
+    }
+
+}
+.emaillogo{
+    cursor: pointer;
+    animation-name: emailMove;
+    animation-duration: 1.5s;
+    animation-direction:normal;
+    animation-fill-mode:forwards;
+    animation-timing-function: ease-in-out;
+}
+@keyframes emailMove {
+    from{
+        height: 0%;
+        width: 0%;
+        
+        margin:-2rem;
+        padding: 0;
+
+    }
+    to{
+     width: 13%;
+    margin-left: 10rem;
+    height: 10%;
+    }
+}
+.gitlogo{
+    cursor: pointer;
+     animation-name: gitMove;
+     animation-duration: 1.5s;
+     animation-direction:normal;
+     animation-fill-mode:forwards;
+     animation-timing-function: ease-in-out;
+     color: wheat;
+ }
+ @keyframes gitMove {
+    from{
+        height: 0%;
+        width: 0%;
+        margin:-3rem;
+        padding: 0;
+
+    }
+    to{
+        margin-top: 5rem;
+        margin-left: 27rem;
+        width: 15%;
+        height: 20%;
+    }
+}
+ .tele{
+    cursor: pointer;
+    margin-top:6.5rem;
+    width: 16%;
+    margin-left: 10rem;
+    height: 10%;
+    animation-name: teleMove;
+    animation-duration: 1.5s;
+    animation-direction:normal;
+    animation-fill-mode:forwards;
+    animation-timing-function: ease-in-out;
+}
+@keyframes teleMove {
+    from{
+        height: 0%;
+        width: 0%;
+        margin:-2rem;
+        padding: 0;
+
+    }
+    to{
+        width: 13%;
+        margin-left: 10rem;
+        height: 10%;
+    }
+}
