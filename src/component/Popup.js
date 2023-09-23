@@ -9,6 +9,7 @@ const Popup = () => {
     <>
         <Navbar/>
         <div>
+            <h2 className="heading">Project <span>Demo</span></h2>
             <div id="popup">
                 <video src={Task} muted autoplay controls></video>
             </div>

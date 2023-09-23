@@ -32,6 +32,7 @@
     background: var(--second-bg-color);
     border-radius: .8rem;
     margin:.4rem 0;
+    border: transparent;
 }
 .contact form .input-box input{
     width:49%;
@@ -42,6 +43,12 @@
 .contact form .btn{
     margin-top: 1rem;
     cursor: pointer;
+}
+.error{
+    color:red;
+    position: absolute;
+    margin-top:2rem;
+    margin-left:0.8rem;
 }
 .popup{
     width:400px;
