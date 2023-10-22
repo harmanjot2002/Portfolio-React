@@ -36,7 +36,7 @@ const Footer = () => {
                     <Link to="https://www.linkedin.com/in/harmanjot-kaur-4427b122a/" target="_blank"><FaLinkedin size={30} style={{color:'#fff',marginRight:"1rem" ,cursor:"pointer"}}/></Link>
                     <Link to="https://www.instagram.com/harmankaur_2002/" target="_blank"><FaInstagram size={30} style={{color:'#fff',marginRight:"1rem",cursor:"pointer"}}/></Link>
                     <Link to="https://github.com/harmanjot2002" target="_blank"> <FaGithub size={30} style={{color:'#fff',marginRight:"1rem" ,cursor:"pointer"}}/></Link>
-                    <Link to="mailto:harmanjot0555.be21@chitkara.edu.in" target="_blank"> <FaGoogle size={30} style={{color:'#fff',marginRight:"1rem" ,cursor:"pointer"}}/></Link>
+                    <a href ="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=harmanjotkainth@gmail.com" target="_blank"> <FaGoogle size={30} style={{color:'#fff',marginRight:"1rem" ,cursor:"pointer"}}/></a>
                 </div>
             </div>
         </div>   
