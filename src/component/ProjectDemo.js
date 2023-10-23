@@ -2,8 +2,8 @@ import "./ProjectStyles.css";
 import React from 'react';
 
 import Task from '../assets/task.png';
-import Music from '../assets/music.png';
-import Food from '../assets/food.png';
+import Schools from '../assets/H4Schools.png';
+import FMS from '../assets/FMS.png';
 
 import {Link} from 'react-router-dom';
 import {FaGithub,FaVideo} from "react-icons/fa";
@@ -16,27 +16,27 @@ const ProjectDemo = () => {
         <h2 className="heading">Latest <span>Projects</span></h2>
         <div className="portfolio-container" style={{zIndex:20}}>
             <div className="portfolio-box">
-                <img src={Music} alt="Music Player"/>
+                <img src={Schools} alt="H4 Schools"/>
                 <div className="portfolio-layer">
-                    <h4>Music Player</h4>
-                    <p>Music Player Website Clone created using HTML and CSS.This is a complete music player with playlist options.</p>
+                    <h4>H4 Schools</h4>
+                    <p>"Content Management System" allows users to access an extensive library of tutorials, examples, and resources for HTML,CSS,JS and more.It empowers developers and learners to explore user-friendly interface, advanced filtering capabilities and responsive design in this CMS project.</p>
                     <div className="connects">
-                        <Link className="redirect" to="https://github.com/harmanjot2002/Music-Player" target="_blank"><FaGithub size={30} style={{color:"var(--bg-color"}}/></Link>
-                        <Link to="https://music-player-beryl-seven.vercel.app/" target="_blank"><BiLinkExternal size={30} style={{color:"var(--bg-color"}}/></Link>
-                        <Link to="/popup" target="_blank"><FaVideo size={30} style={{color:"var(--bg-color"}}/></Link>
+                        <Link className="redirect" to="https://github.com/harmanjot2002/H4-Schools" target="_blank"><FaGithub size={30} style={{color:"var(--bg-color"}}/></Link>
+                        <Link to="https://h4-schools.vercel.app/" target="_blank"><BiLinkExternal size={30} style={{color:"var(--bg-color"}}/></Link>
+                        <Link to="/popup3" target="_blank"><FaVideo size={30} style={{color:"var(--bg-color"}}/></Link>
                     </div>
                     
                 </div>
             </div>
             <div className="portfolio-box">
-                <img src={Food} alt="Food Website"/>
+                <img src={FMS} alt="EduCrafter"/>
                 <div className="portfolio-layer">
-                    <h4>Food Delivery Service</h4>
-                    <p>The website includes a gallery that features delicious food shots. This layoutis arranged in a grid that's easy to pull off with CSS grid in React JS.</p>
+                    <h4>EduCrafter</h4>
+                    <p>"Faculty Management System" is a web-based application designed to streamline faculty-related tasks. Users can effortlessly manage faculty information, assign lectures and groups,provide ratings or reviews and  view them weekly,monthly and yearly.</p>
                     <div className="connects">
-                        <Link className="redirect" to="https://github.com/harmanjot2002/HarmanFoodies" target="_blank"><FaGithub size={30} style={{color:"var(--bg-color"}}/></Link>
-                        <Link className="redirect" to="https://harman-foodies.vercel.app/" target="_blank"><BiLinkExternal size={30} style={{color:"var(--bg-color"}}/></Link>
-                        <Link to="/popup" target="_blank"><FaVideo size={30} style={{color:"var(--bg-color"}}/></Link>
+                        <Link className="redirect" to="https://github.com/harmanjot2002/EduCrafter" target="_blank"><FaGithub size={30} style={{color:"var(--bg-color"}}/></Link>
+                        <Link className="redirect" to="https://dashboard-harmanjot2002.vercel.app/" target="_blank"><BiLinkExternal size={30} style={{color:"var(--bg-color"}}/></Link>
+                        <Link to="/popup2" target="_blank"><FaVideo size={30} style={{color:"var(--bg-color"}}/></Link>
                     </div>
                 </div>
             </div>
