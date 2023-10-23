@@ -1,31 +1,35 @@
 import "./ContactStyles.css";
-import React,{useState} from 'react';
-// import {Link} from "react-router-dom"
-import Tick from '../assets/tick.png'
-
-// let popup=document.getElementsByClassName("popup");
+import React,{useState,useRef} from 'react';
+import emailjs from '@emailjs/browser';
 const openPopup = () =>{
     alert("Submitted successfully");
-    // popup.classList.add("open-popup");
 }
-// const closePopup = () =>{
-//  popup.classList.remove("open-popup");
-// }
+
 
 const ContactForm = () => {
+    const form = useRef();
+
+  const sendEmail = (e) => {
+
+    emailjs.sendForm('service_bhbrx97', 'template_8iygjge', form.current, 'NRDJ1PoPQXmwHx3LB')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
     
     const [formData, setFormData] = useState({
         username: '',
         email: '',
         number: '',
-        // password: '',
     });
 
     const [errors, setErrors] = useState({
         username: '',
         email: '',
         number: '',
-        // password: '',
     });
     
     const validateForm = () => {
@@ -86,26 +90,6 @@ const ContactForm = () => {
             }
         
 
-        // const passwordRegex = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/;
-        // if(!formData.password.trim()) {
-        //     setErrors((prevErrors) => ({
-        //         ...prevErrors,
-        //         password: 'Password is required'
-        //     }));
-        //     valid = false;
-        // } else if (!passwordRegex.test(formData.password)) {
-        //     console.log(!passwordRegex.test(formData.password));
-        //     setErrors((prevErrors) => ({
-        //         ...prevErrors,
-        //         password: 'Password must be at least 8 characters long and contain at least one letter and one number',
-        //     }));
-        //     valid =  false;
-        // } else {
-        //     setErrors((prevErrors) => ({
-        //         ...prevErrors,
-        //         password: '',
-        //     }))
-        // }
         return valid;
     }
 
@@ -115,7 +99,8 @@ const ContactForm = () => {
         if(validateForm()) {
             console.log('Form Data:', formData);
             openPopup();
-            // setClassState('open-popup');
+            sendEmail();
+            
         } else {
             console.log('Form validation failed');
         }
@@ -132,7 +117,7 @@ const ContactForm = () => {
     <>
       <section className="contact" id="contact" style={{zIndex:20}}>
         <h2 className="heading">Contact <span>Me</span></h2>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} ref={form}>
             <div className="input-box">
                 <input type="text" name="username" placeholder="Full Name" value={formData.username} onChange={handleChange} required/>
                 {errors.username && <span className='error'>{errors.username}</span>}
@@ -143,17 +128,11 @@ const ContactForm = () => {
             <div className="input-box">
                 <input name='number' type="number" placeholder="Mobile Number" autoComplete="none"  value={formData.number} onChange={handleChange} required/>
                 {errors.number && <span className='error'>{errors.number}</span>}
-                <input id ="sub" type="text" placeholder="Email Subject" autoComplete="none" required/>
+                <input id ="sub" type="text" placeholder="Email Subject" autoComplete="none" name="emailSubject" required/>
             </div>
-            <textarea name="" id="txt" cols="30" rows="10" placeholder="Your Message" autoComplete="none" required></textarea>
+            <textarea name="message" id="txt" cols="30" rows="10" placeholder="Your Message" autoComplete="none" required></textarea>
             <button type="submit" className="btn">Send Message</button>
             
-            <div className='popup' id="popup">
-                <img src={Tick} alt="yellow tick"/>
-                <h2>Thank You!</h2>
-                <p>Your details have been submitted successfully.Thanks!</p>
-                {/* <button type="submit" className="btn" onClick={closePopup}>OK</button> */}
-            </div> 
         </form>
     </section>
     </>
