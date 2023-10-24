@@ -22,7 +22,7 @@ const ProjectDemo = () => {
                     <p>"Content Management System" allows users to access an extensive library of tutorials, examples, and resources for HTML,CSS,JS and more.It empowers developers and learners to explore user-friendly interface, advanced filtering capabilities and responsive design in this CMS project.</p>
                     <div className="connects">
                         <Link className="redirect" to="https://github.com/harmanjot2002/H4-Schools" target="_blank"><FaGithub size={30} style={{color:"var(--bg-color"}}/></Link>
-                        <Link to="https://h4-schools.vercel.app/" target="_blank"><BiLinkExternal size={30} style={{color:"var(--bg-color"}}/></Link>
+                        <Link to="https://h4-schools-6m61-7kba5ukvq-harmanjot2002.vercel.app/" target="_blank"><BiLinkExternal size={30} style={{color:"var(--bg-color"}}/></Link>
                         <Link to="/popup3" target="_blank"><FaVideo size={30} style={{color:"var(--bg-color"}}/></Link>
                     </div>
                     
