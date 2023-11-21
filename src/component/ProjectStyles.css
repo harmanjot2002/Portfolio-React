@@ -78,7 +78,10 @@
     background:var(--text-color);
     border-radius: 50%;
 }
-/* .portfolio-layer .redirect{
-    width:5rem;
-    height:5rem;
-} */
+
+/* Media query for smaller screens */
+@media (max-width: 968px) {
+    .portfolio-container {
+      grid-template-columns: 1fr;
+    }
+  }
