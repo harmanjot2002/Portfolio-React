@@ -8,10 +8,11 @@
   font-family: "Outfit", sans-serif;
 }
 :root {
-  --bg-color: #1b0009;
-  --second-bg-color:#2f0711;
+  --bg-color: #1f242d;
+  --second-bg-color:#323946;
   --text-color: #fff;
-  --main-color: #DE3163;
+  --main-color: rgb(73, 203, 255);
+  /* --main-color: #f6b80c; */
 }
 ::-webkit-scrollbar{
   width: 12px;
