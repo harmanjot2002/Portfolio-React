@@ -4,6 +4,7 @@ import React from 'react';
 import Task from '../assets/task.png';
 import Schools from '../assets/H4Schools.png';
 import FMS from '../assets/FMS.png';
+import Book from '../assets/book.png'
 
 import {Link} from 'react-router-dom';
 import {FaGithub,FaVideo} from "react-icons/fa";
@@ -53,6 +54,33 @@ const ProjectDemo = () => {
                     
                 </div>
             </div>
+        </div>
+        <div className="portfolio-container" style={{zIndex:20}}>
+            <div className="portfolio-box">
+                <img src={Book} alt="H4 Schools"/>
+                <div className="portfolio-layer">
+                    <h4>HD 1.0-Library Management System</h4>
+                    <p>This Java-based Library Management System facilitates complete CRUD operations for managing authors and books. It leverages AWT, Swing for a user-friendly interface and MySQL for robust data storage.</p>
+                    <div className="connects">
+                        <Link className="redirect" to="https://github.com/harmanjot2002/Library-Management-System" target="_blank"><FaGithub size={30} style={{color:"var(--bg-color"}}/></Link>
+                        <Link to="/popup3" target="_blank"><FaVideo size={30} style={{color:"var(--bg-color"}}/></Link>
+                    </div>
+                    
+                </div>
+            </div>
+            <div className="portfolio-box">
+                <img src={FMS} alt="EduCrafter"/>
+                <div className="portfolio-layer">
+                    <h4>EduCrafter</h4>
+                    <p>"Faculty Management System" is a web-based application designed to streamline faculty-related tasks. Users can effortlessly manage faculty information, assign lectures and groups,provide ratings or reviews and  view them weekly,monthly and yearly.</p>
+                    <div className="connects">
+                        <Link className="redirect" to="https://github.com/harmanjot2002/EduCrafter" target="_blank"><FaGithub size={30} style={{color:"var(--bg-color"}}/></Link>
+                        <Link className="redirect" to="https://dashboard-harmanjot2002.vercel.app/" target="_blank"><BiLinkExternal size={30} style={{color:"var(--bg-color"}}/></Link>
+                        <Link to="/popup2" target="_blank"><FaVideo size={30} style={{color:"var(--bg-color"}}/></Link>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </section>
     </div>
