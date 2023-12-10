@@ -13,7 +13,7 @@ const HeroImg = () => {
         <h3>Hello, It's Me</h3>
         <h1>Harmanjot Kaur</h1>
         <h3>And I'm a <span>Frontend Developer</span></h3>
-        <p>A Passionate Programmer And Problem Solver. Results-driven Front End Engineer with a proven track record of designing and developing intuitive and visually appealing user interfaces. Adept at analyzing user requirements, implementing best practices, and optimizing website performance to deliver exceptional user experiences.</p>
+        <p>Versatile full-stack developer skilled in MERN (MongoDB, Express, React, Node) stack with expertise in Android app development using React Native. Eager to contribute technical skills and passion for creating engaging web and android applications in a collaborative team environment.Despite being early in my career, my passion for coding and commitment to staying at the forefront of technology make me a valuable asset for projects seeking fresh perspectives and innovative solutions.</p>
         <div className="buttons">
             <Link to="/project" className="btn">Projects</Link>
             <Link to="/contact" className="btn-light">Contact</Link>
