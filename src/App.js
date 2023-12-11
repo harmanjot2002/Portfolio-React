@@ -9,6 +9,7 @@ import Education from "./routes/Education";
 import Popup from "./component/Popup";
 import Popup2 from "./component/Popup2";
 import Popup3 from "./component/Popup3";
+import Popup4 from "./component/Popup4";
 import { Route, Routes } from "react-router-dom";
 import SocialIcons from "./routes/SocialIcons";
 
@@ -25,6 +26,7 @@ function App() {
         <Route path="/popup" element={<Popup/>}></Route>
         <Route path="/popup2" element={<Popup2/>}></Route>
         <Route path="/popup3" element={<Popup3/>}></Route>
+        <Route path="/popup4" element={<Popup4/>}></Route>
         <Route path="/socialIcons" element={<SocialIcons/>}></Route>
       </Routes>
     </>
