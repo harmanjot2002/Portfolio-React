@@ -6,6 +6,7 @@ import Schools from '../assets/H4Schools.png';
 import FMS from '../assets/FMS.png';
 import Book from '../assets/book.png'
 import Certify from '../assets/Certify.png'
+import PhotoVista from '../assets/PhotoVista.png'
 
 import {Link} from 'react-router-dom';
 import {FaGithub,FaVideo} from "react-icons/fa";
@@ -80,7 +81,17 @@ const ProjectDemo = () => {
                     </div>
                 </div>
             </div>
-            
+            <div className="portfolio-box">
+                <img src={PhotoVista} alt="PhotoVista"/>
+                <div className="portfolio-layer">
+                    <h4>PhotoVista</h4>
+                    <p>PhotoVista is a full-stack Instagram clone project developed using Node.js and Express on the server-side, MongoDB with Mongoose for database management, Multer for handling file uploads, Passport.js for user authentication, EJS for server-side templating, and AJAX/Axios for seamless client-server communication.</p>
+                    <div className="connects">
+                        <Link className="redirect" to="https://github.com/harmanjot2002/PhotoVista" target="_blank"><FaGithub size={30} style={{color:"var(--bg-color"}}/></Link>
+                        <Link to="/popup5" target="_blank"><FaVideo size={30} style={{color:"var(--bg-color"}}/></Link>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     </div>
